@@ -85,7 +85,7 @@ resource "azurerm_linux_virtual_machine" "workload" {
   name                = "vm-${var.prefix}-workload"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  size                = "Standard_L2s_v4"
+  size                = "Standard_B2s_v2"
 
   admin_username = "azureuser"
 
